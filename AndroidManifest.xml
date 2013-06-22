@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+          package="" 
+          android:versionCode="1" 
+          android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="10" />
+  <application android:label=""
+               android:icon="@drawable/icon"
+               android:debuggable="true" >
+               
+               <!--  if you can get processing working in > API level 10, you can add 
+                     android:largeHead="true" to the application element 
+                     above  to get more RAM for your app. You'll lose 2.3 compatibility though -->
+    <activity android:name="">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>

@@ -1,0 +1,2 @@
+This is a processor project that illustrates how to use the newly modified androi
+d_api.  This project shows the letters of the alphabet with my wife's voice saying each letter.  I used only one AudioPlayer and used my new dynamic reload method to change the wave data each time a new letter is used.
