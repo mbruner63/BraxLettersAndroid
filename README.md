@@ -1,4 +1,5 @@
 BraxLettersAndroid
 ==================
 
-Example of using new android_api.pde for a project to help my son with his alphabet
+Example of using modified android_api.pde for a processor project to help my son with his alphabet.  I used only one AudioPlayer 
+and dynamically loaded the wave data for each letter.
