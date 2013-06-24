@@ -7,8 +7,8 @@ int lastLetter = 26;
 short[][] AudioClips = new short [lastLetter][];
 
 // Audio Files
-String[] audioFileArray = {"LtrA.wav","LtrB.wav",
-                           "LtrC.wav","LtrD.wav",
+String[] audioFileArray = {"LtrA96K.wav","LtrB32K.wav",
+                           "LtrC48K.wav","LtrD16K.wav",
                            "LtrE.wav","LtrF.wav",
                            "LtrG.wav","LtrH.wav",
                            "LtrI.wav","LtrJ.wav",
@@ -69,8 +69,8 @@ void displayLetter()
   }  
 
 // Load new letter sound into player  
-  maxim.reLoadPlayer(player, AudioClips[myIndex]);
-  
+  //maxim.reLoadPlayer(player, AudioClips[myIndex]);
+    player.selectAudioClip(myIndex);
 // Play letter sound  
   player.setLooping(false);
   player.volume(1);
@@ -93,17 +93,16 @@ void setup()
   background(0);
 
   for(int i = 0;i<lastLetter;i++) {
-    AudioClips[i] = player.justLoadAudioFile(audioFileArray[i]);
+    //AudioClips[i] = player.justLoadAudioFile(audioFileArray[i]);
     Letter[i] = loadImage(imageArray[i]);   
   }  
-  displayLetter();
-
   
+  player.loadAudioClips(audioFileArray);
+  displayLetter();
 }
 
 void draw()
-{
-  
+{  
 // code that happens every frame
   background(0);
   
